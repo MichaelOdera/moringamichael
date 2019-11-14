@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="topnav" id="Topnav">
+                <ul>
+                  <li><img src="https://i.pinimg.com/236x/39/f9/3a/39f93a34604ca9fba2e3988f4d413acf.jpg"></li>
+                  <li><a href="index.html" class="active">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                  <li><a href="login.html">LOGIN</a></li>
+                      <div class="dropdown icon">
+                          <button class="dropdown-button">Menu</button>
+                          <div class="dropdown-list">
+                            <a href="about.html">About</a>
+                            <a href="login.html">LOGIN</a>
+                          </div>
+                        </div>
+        
+                </ul>
+        </div>
+            
+            
+
+
+            <div id="overall">
+                    <a href="ratings.html" class="ratings" style="color: black; margin-left: 300px; font-size: 36px;"><i class="fa fa-bar-chart"></i><br>Ratings</a>
+              <div class="sales ratings">
+                    <ul>
+                        <li>
+                            <p>
+                                <img src="https://www.udelv.com/wp-content/uploads/2018/01/logo-bloomberg-left.png" style="margin-top: -3%; height: 60%; margin-bottom: 5%;"><br>
+                    
+                                        The Vinod surged the most in eight months after the manufacturer raised its 2019 cash-flow forecast for the second straight quarter,
+                                         giving Chief Executive Officer Larry Culp’s turnaround effort a much-needed boost.
+
+                                        The industrial businesses will generate as much as $2 billion in free cash this year, 
+                                        GE said Wednesday as it reported third-quarter earnings. The company previously projected no more than $1 billion in cash flow
+                                
+                            </p>
+                        </li>
+
+
+                        <li>
+                            <p>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZn7yt8Wxe4c__OsGQWa0dy5GaUEq2K5iIOorc67Hc9Dff963jDA&s" style="height: 50%; padding-top: 1%; margin-bottom: 7%;"><br>
+                              
+                                
+                
+                                                Fitch Ratings has revised the Outlook on Turkey's Long-Term Foreign-Currency Issuer Default Rating (IDR) to Stable from Negative, 
+                                                and affirmed the IDR at 'BB-'. Turkey has continued to make progress in rebalancing and stabilising its economy,
+                                                 leading to an easing in downside risks since our previous review in July
+                            </p>
+                            
+                        </li>   
+
+                    </ul>
+         
+              <div class="icon-bar">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                    <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="index.html#youtube_video" class="youtube"><i class="fa fa-youtube"></i></a> 
+                </div>
+            </div>
+
+
+        <!-- The nav bar disappears on scroll-->
+        <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                  var currentScrollPos = window.pageYOffset;
+                  if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("Topnav").style.top = "0";
+                    } else {
+                      document.getElementById("Topnav").style.top = "-100px";
+                      }
+                    prevScrollpos = currentScrollPos;
+                    }
+        </script>
+
+        <!--the top right-side menu button script-->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("Topnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+              
+    
+    
+</body>
+</html>

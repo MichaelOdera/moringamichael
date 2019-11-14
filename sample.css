@@ -1,0 +1,486 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This is my side icon navbar*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.icon-bar a 
+{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+}
+  
+.icon-bar a:hover 
+{
+    background-color: red;
+    width:  80%;
+    transition: 0.4s;
+    z-index: 1;
+}
+  
+.facebook 
+{
+    background: white;
+    color: black;
+}
+  
+.twitter
+{
+    background: white;
+    color: black;
+}
+  
+.google
+{
+    background: white;
+    color:black;
+}
+  
+.linkedin
+{
+    background: white;
+    color: black;
+}
+  
+.youtube 
+{
+    background:white;
+    color: black;
+}
+
+
+
+/*The table styling comments*/
+.shop-links{
+    padding-top: 4%;
+    margin-bottom: 0;
+    padding-bottom: 3%;
+}
+.shop-links ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shop-links ul li a{
+    display: block;
+    text-align: center;
+    padding: 40px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 160%;
+    padding: 4%;
+}
+
+.shop-links ul li{
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    padding: 3;
+}
+
+.shop-links ul li a .fa{
+    font-size: 40px;
+}
+
+.engines{
+    color: white;
+    font-size: 70px;
+}
+
+.wheels{
+    color: white;
+    font-size: 70px;
+}
+
+.lubricants{
+    color: white;
+    font-size: 70px;
+}
+
+ .shop-links ul li a:hover{
+    color: red;
+}
+
+
+/*This is my image stack*/
+.image-stack{
+    display: flex;
+    width: 100%;
+}
+
+.image-stack section{
+    width: 25%;
+    display: inline-block;
+    overflow: hidden;
+    padding-top:0;
+    padding-bottom: 80px;
+}
+
+.image-stack section img{
+    width: 100%;
+    height: 45%;
+    /*display: inline-block;
+    overflow: hidden;*/
+}
+
+/*.image-wrapper{
+    overflow: hidden;
+
+}*/
+
+.image-stack section div{
+    font-size: 25px;
+    background: darkgrey;
+    margin: 0;
+    padding: 4%;
+    text-align: center;
+    height: 60%;
+}
+
+section div hr{
+    text-align: left;
+} 
+
+section div p{
+    padding: 4%;
+    margin-top: 2px solid red;
+    border-width: 10%;
+
+}
+
+section div p:before{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 50%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 4%;
+    padding-left: 25%;
+    border-top: 2px solid red; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s;
+}
+
+.shop-links ul li{
+    list-style: none;
+    width: 30%;
+}
+
+section div p:hover:before{
+    width: 80%;
+}
+
+section div a{
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+section div a:hover{
+    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+
+.image-stack section div.even{
+    background: grey;
+}
+
+.image-stack{
+    margin-top: -2%;
+}
+/*image hover*/
+/*section img{
+    transition: all .2s;
+    overflow: hidden;
+}
+
+section img:hover{
+    transform: scale(1.5);
+}*/
+ 
+
+
+
+/* the styling for my main page that is in the div class container*/
+.container{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2019/performance/corvette-stingray1/mov/01-images/2019-corvette-stingray-masthead.jpg?imwidth=960');
+    /*background-image: url('https://images.pexels.com/photos/3076820/pexels-photo-3076820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
+    background-size: cover;
+    background-attachment: fixed;
+    height: 10%;
+    margin-top: -2%;
+}
+
+#overlay{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+nav{
+    position: sticky;
+    top:0;
+    margin-bottom: 2%;
+    margin-left: 0;
+}
+
+nav div{
+    float: left;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0.5%;
+    width: 25%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav div h1, nav div img{
+    float: left;
+}
+
+nav div h1{
+    font-size: 30px;
+    width: 30%;
+    margin-top: 0px;
+}
+
+nav div img{
+    height: 5%;
+    width: 15%;
+    border-radius: 10px;
+    border: 2px solid red; 
+    margin: 1%;
+}
+
+nav ul{
+    display: flex;
+    padding: 2%;
+    padding-left: 1%;
+    margin-right: 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 2%;
+    clear: both;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    font-size: 120%;
+    padding: 10%;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover, .active{
+    background-color: #4267B2;
+    transition: 0.5s;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 80%;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+/*The subscription div */
+.subscription{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://cdn.images.express.co.uk/img/dynamic/24/590x/1198692_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 36px;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 2%; 
+    overflow: hidden;
+    height: 300px;
+}
+
+#subscribe{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);    
+}
+
+#subscribe form{
+    width: 100%;
+    padding-bottom: 90px;
+}
+#subscribe form input[type=email]
+{
+    width: 70%;
+    height: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 3%;
+    outline: none;
+    margin-left: 10%;
+    margin-top: 2%;
+    border: 2px solid red;
+    outline: none;
+}
+
+#subscribe form input[type=submit]{
+    width: 70%;
+    height: 20px;
+    margin-top: 1%;
+    margin-left: 10%;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 2%;
+}
+
+#subscribe form input[type=submit]:hover{
+    background-color: rgb(255, 50, 50);
+}
+
+#subscribe form textarea{
+    width: 70%;
+}
+
+
+/* the mailing part*/
+.mail-us{
+    width: 80%;
+    margin-left: 10%;
+}
+.mail-us ul{
+    display: flex;
+    width: 100%;
+    margin-left: 4%;
+}
+.mail-us ul li{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.mail-us ul li:first-child{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.mail-us ul li img{
+    transition: .2s;
+}
+.mail-us ul li img:hover{
+    transition: all .2s;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+
+/* the mailing form*/
+.mail-us ul li form{
+    text-align: center;
+    margin-top: 0;
+    border: 2px solid grey;
+    height: 97%;
+    width: 90%;
+    padding: 4%;
+    color: white;
+    background-color: red;
+    overflow: hidden;
+}
+.mail-us ul li form select{
+    margin-bottom: 10%;
+    width: 70%;
+    height: 5%;
+    background-color: black;
+    color: white;
+}
+
+.mail-us ul li form select:hover{
+    background-color: white;
+    color: black;
+}
+
+.mail-us ul li form input[type=text], .mail-us ul li form input[type=email]{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-form{
+    width: 100%;
+}
+
+.mail-us ul li form input[type=submit]{
+    width: 50%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*Here is my map css code*/
+
+
+
+
+
+
+/*The sales page*/
+.sales ul{
+    text-align: center;
+}
+
+.sales ul li{
+    list-style: none;
+    display: inline-block;
+    height: 600px;
+    width: 550px;
+    border: 1px solid grey;
+    overflow: hidden;
+    align-items: center;
+}
+
+.sales ul li p{
+    height: 45%;
+    width: 100%;
+}
+
+.sales ul li img{
+    width: 70%;
+    height: 150%;
+    border-radius: 7px;
+}
+
+.sales ul li button{
+    margin-bottom: 0;
+    align-items: center;
+}
+
+
+/*responsive nav bar*/
+
+
